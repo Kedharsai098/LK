@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ReelForge - Video Editing Agency</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #0f0f0f;
+      color: #fff;
+      line-height: 1.6;
+    }
+    header {
+      background-color: #1a1a1a;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    header h1 {
+      color: #00ffe1;
+      font-size: 1.8rem;
+    }
+    nav a {
+      color: #ccc;
+      text-decoration: none;
+      margin-left: 1.5rem;
+      font-weight: 600;
+    }
+    nav a:hover {
+      color: #00ffe1;
+    }
+    .hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 3rem 1rem;
+      text-align: center;
+    }
+    .hero img {
+      width: 100%;
+      max-width: 900px;
+      border-radius: 20px;
+      box-shadow: 0 0 30px rgba(0, 255, 225, 0.2);
+    }
+    .hero h2 {
+      margin-top: 2rem;
+      font-size: 2.5rem;
+      color: #00ffe1;
+    }
+    .hero p {
+      font-size: 1.1rem;
+      max-width: 700px;
+      margin-top: 1rem;
+    }
+    .services {
+      padding: 4rem 2rem;
+      background: #141414;
+      text-align: center;
+    }
+    .services h3 {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      color: #00ffe1;
+    }
+    .services-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+    }
+    .service {
+      background: #1e1e1e;
+      padding: 2rem;
+      border-radius: 15px;
+      width: 300px;
+      box-shadow: 0 0 20px rgba(0, 255, 225, 0.1);
+    }
+    .service h4 {
+      color: #00ffe1;
+      margin-bottom: 1rem;
+    }
+    .portfolio {
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+    .portfolio h3 {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      color: #00ffe1;
+    }
+    .videos {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      justify-content: center;
+    }
+    .videos iframe {
+      width: 320px;
+      height: 180px;
+      border: none;
+      border-radius: 12px;
+    }
+    .contact {
+      background: #1a1a1a;
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+    .contact h3 {
+      color: #00ffe1;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    form {
+      max-width: 600px;
+      margin: auto;
+    }
+    input,
+    textarea {
+      width: 100%;
+      padding: 0.75rem;
+      margin-bottom: 1rem;
+      border: none;
+      border-radius: 8px;
+      font-family: 'Poppins', sans-serif;
+    }
+    button {
+      background-color: #00ffe1;
+      color: #000;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    button:hover {
+      background-color: #00cfc1;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      background: #111;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>ReelForge</h1>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <img src="https://5.imimg.com/data5/SELLER/Default/2022/9/HF/KQ/HI/53095231/edius-9-premier-video-editing-setup-1000x1000.jpeg" alt="Editing Setup">
+    <h2>Premium Video Editing for Creators</h2>
+    <p>We help content creators stand out with scroll-stopping edits, thumbnails, and storytelling that converts views into fans. Join the next-gen creative revolution.</p>
+  </section>
+
+  <section class="services" id="services">
+    <h3>Our Services</h3>
+    <div class="services-list">
+      <div class="service">
+        <h4>Reel & Short Video Editing</h4>
+        <p>Perfectly timed cuts, trendy transitions, and viral-ready formats tailored for Instagram and YouTube.</p>
+      </div>
+      <div class="service">
+        <h4>Thumbnail Design</h4>
+        <p>Eye-catching thumbnails that increase click-through rates and instantly grab attention.</p>
+      </div>
+      <div class="service">
+        <h4>Long-Form YouTube Edits</h4>
+        <p>Professional storytelling, jump cuts, captions, and SFX to keep viewers engaged.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="portfolio" id="portfolio">
+    <h3>Our Work</h3>
+    <div class="videos">
+      <iframe src="https://www.youtube.com/embed/lXNxpOCimxk" title="Sample Edit 1"></iframe>
+      <iframe src="https://www.youtube.com/embed/Rm2X03ExqUc" title="Sample Edit 2"></iframe>
+      <iframe src="https://www.youtube.com/embed/I2aLDDKtfVQ" title="Sample Edit 3"></iframe>
+    </div>
+  </section>
+
+<form action="https://formspree.io/f/mnnznbvj" method="POST">
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_subject" value="New Inquiry from ReelForge Site">
+  <input type="text" name="name" placeholder="Your Name" required>
+  <input type="email" name="email" placeholder="Your Email" required>
+  <textarea name="message" placeholder="Your Message" required></textarea>
+  <button type="submit">Send Message</button>
+</form>
+
+  <footer>
+    © 2025 ReelForge. Built with ❤️ by Creators for Creators.
+  </footer>
+</body>
+
+</html>
